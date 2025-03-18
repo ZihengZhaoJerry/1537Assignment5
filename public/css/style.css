@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Old+Standard+TT:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+@font-face {
+    font-family: 'MantraCinta';
+    src: url('font/MantraCinta.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.header {
+    background: linear-gradient(90deg, #ff4500, #8b0000);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Cinzel', serif;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar .logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    padding: 10px;
+    font-size: 1.2em;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar nav ul li a:hover {
+    color: goldenrod;
+}
+
+.extra-links a {
+    color: orange;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.ashen-story, .elden-story {
+    font-size: 18px;
+}
+
+main {
+    margin-left: 220px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.featured-image {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.featured-image img {
+    width: 100%;
+    display: block;
+}
+
+.interaction {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar, .subscribe-input, .subscribe-btn {
+    padding: 10px;
+    margin: 5px;
+    flex-grow: 1;
+}
+
+.blog-section {
+    width: 80%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.blog-post {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    right: 60px;
+}
+
+.footer .social-links img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+/* --- 💀 DARK SOULS WEAPONS SECTION - PERFECTLY CENTERED 💀 --- */
+
+/* Center the entire Dark Souls Weapons section */
+.weapon-section {
+    width: 80%;
+    max-width: 900px; /* Slightly wider for better readability */
+    margin: 40px auto; /* Centers it */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Center the AJAX content boxes like blog posts */
+.ajax_content {
+    width: 100%;
+    max-width: 900px; /* Matches blog layout */
+    margin: 20px auto;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.85); /* Slightly darker for a premium feel */
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Center the table content */
+#weapon-table, #weapon-data {
+    width: 100%;
+    max-width: 900px; /* Matches blog width */
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Style the weapons table */
+#weapon-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#weapon-table th, #weapon-table td {
+    padding: 14px;
+    border: 1px solid white;
+    font-size: 1rem;
+}
+
+#weapon-table th {
+    background: #8b0000; /* Deep red like blood */
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+}
+
+#weapon-table tr:nth-child(even) {
+    background: rgba(255, 69, 0, 0.3);
+}
+
+#weapon-table tr:hover {
+    background: rgba(255, 69, 0, 0.5);
+}
+
+/* Dark Souls style button */
+.ajax_content button {
+    background-color: #ff4500; /* Fiery orange-red */
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Cinzel', serif;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.ajax_content button:hover {
+    background-color: #8b0000; /* Dark red on hover */
+    transform: scale(1.05);
+}
+
+/* Style for Clear button */
+.ajax_content .clear {
+    background-color: #444;
+    color: white;
+    margin-left: 10px;
+}
+
+/* JSON List Styling */
+#weapon-data ol {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#weapon-data li {
+    background: rgba(255, 69, 0, 0.3);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+}
+/* --- 💀 DARK SOULS WEAPONS SECTION - PERFECTLY STYLED JSON TABLE 💀 --- */
+
+/* Center the Dark Souls Weapons section */
+.weapon-section {
+    width: 80%;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Ensure the heading is centered and styled */
+.weapon-section h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #8b0000;
+    margin-bottom: 20px;
+}
+
+/* Center the AJAX content boxes */
+.ajax_content {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 12px;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Center the table inside the section */
+#weapon-table, #weapon-data {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Dark Souls Weapons Table */
+#weapon-data table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(255, 69, 0, 0.3);
+}
+
+/* Table Header Styling */
+#weapon-data th {
+    background: #8b0000;
+    font-family: 'Cinzel', serif;
+    font-size: 1.3rem;
+    padding: 14px;
+    border: 1px solid #ff4500;
+}
+
+/* Table Cell Styling */
+#weapon-data td {
+    padding: 12px;
+    border: 1px solid white;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Alternate Row Colors */
+#weapon-data tr:nth-child(even) {
+    background: rgba(255, 69, 0, 0.2);
+}
+
+#weapon-data tr:hover {
+    background: rgba(255, 69, 0, 0.5);
+}
+
+/* Dark Souls-style Buttons */
+.ajax_content button {
+    background-color: #ff4500;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Cinzel', serif;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.ajax_content button:hover {
+    background-color: #8b0000;
+    transform: scale(1.05);
+}
+
+/* Clear button styling */
+.ajax_content .clear {
+    background-color: #444;
+    color: white;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .weapon-section {
+        width: 95%;
+    }
+
+    .ajax_content {
+        max-width: 95%;
+    }
+
+    #weapon-table, #weapon-data {
+        max-width: 95%;
+    }
+
+    #weapon-data th, #weapon-data td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

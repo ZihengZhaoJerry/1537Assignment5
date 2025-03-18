@@ -1,0 +1,74 @@
+{
+    "weapons": [
+        {
+            "name": "Zweihander",
+            "type": "Ultra Greatsword",
+            "damage": 200,
+            "weight": 10.0,
+            "scaling": "Str B, Dex D"
+        },
+        {
+            "name": "Moonlight Greatsword",
+            "type": "Greatsword",
+            "damage": 300,
+            "weight": 8.0,
+            "scaling": "Int A"
+        },
+        {
+            "name": "Uchigatana",
+            "type": "Katana",
+            "damage": 150,
+            "weight": 5.0,
+            "scaling": "Dex B"
+        },
+        {
+            "name": "Great Club",
+            "type": "Great Hammer",
+            "damage": 260,
+            "weight": 15.0,
+            "scaling": "Str A"
+        },
+        {
+            "name": "Black Knight Sword",
+            "type": "Greatsword",
+            "damage": 220,
+            "weight": 9.0,
+            "scaling": "Str C, Dex C"
+        },
+        {
+            "name": "Chaos Blade",
+            "type": "Katana",
+            "damage": 170,
+            "weight": 6.0,
+            "scaling": "Dex A"
+        },
+        {
+            "name": "Dragon Slayer Spear",
+            "type": "Spear",
+            "damage": 240,
+            "weight": 8.5,
+            "scaling": "Str D, Dex B, Faith C"
+        },
+        {
+            "name": "Dark Hand",
+            "type": "Fist",
+            "damage": 80,
+            "weight": 0.5,
+            "scaling": "No Scaling"
+        },
+        {
+            "name": "Giant's Halberd",
+            "type": "Halberd",
+            "damage": 310,
+            "weight": 14.0,
+            "scaling": "Str B"
+        },
+        {
+            "name": "Hand Axe",
+            "type": "Axe",
+            "damage": 130,
+            "weight": 3.5,
+            "scaling": "Str C, Dex D"
+        }
+    ]
+}
